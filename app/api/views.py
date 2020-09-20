@@ -4,7 +4,6 @@ from flask.views import MethodView
 from app.api import api
 from app.api.controllers.flights_controller import get_hello
 
-
 class GetHello(MethodView):
     def get(self):
         return make_response(get_hello(), 200)
